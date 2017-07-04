@@ -13,3 +13,5 @@ Item.all.each do |item|
   item.save
   counter += 1
 end
+
+User.create(email: Faker::Internet.email, password: Faker::Internet.password)
